@@ -1,12 +1,16 @@
 ---
-title: "Welcome To My Blog"
-author: "Tristan O'Malley"
+title: "Starting a Quarto Blog"
+author: "Duncan J. Mayer"
 date: "2022-10-15"
-categories: [news]
+categories: [Welcome]
 ---
 
-This is the first post in a Quarto blog. Welcome!
+I'm starting a quarto blog! Thanks for reading.
 
-![](thumbnail.jpg)
+This blog is my transition to quarto, and a place I'll write about topics that interest me, or things I'm learning. Check out the my [about](https://duncanjmayer.netlify.app/about.html) page to learn more about me.
 
-Since this post doesn't specify an explicit `image`, the first image in the post will be used in the listing page of posts.
+Some items and topics that may appear on this blog include descriptions of presentations I make, or publications I contribute to. I may also write about spatial statistics, nonlinearity, and select topics in statistical inference.
+
+Additionally, I'd like to use this blog to practice programming in a more public space. I have nearly a decade of experience with R, but I'd like to improve with python, and explore popular workflows in R that I haven't yet. So, some posts related to those topics may appear here as well.
+
+![Glasgow Scotland, 1955](lamp_lighter.webp){fig-align="center" width="200"}

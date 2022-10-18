@@ -1,13 +1,23 @@
 ---
-title: "Post With Code"
-author: "Harlow Malloc"
+title: "Publications"
+author: "Duncan J. Mayer"
 date: "2022-10-18"
-categories: [news, code, analysis]
-image: "image.jpg"
+categories: [publications, pdf]
+image: "cincinnati_library.webp"
 ---
 
-This is a post with executable code.
+![Cincinnati library](cincinnati_library.webp){fig-align="center" width="200"}
 
-```{r}
-1 + 1
-```
+Here is a list of my publications and select presentations, with links to PDFs.
+
+## Publications
+
+**Mayer, D. J.**, Groza, V. (in press) Promoting Children's Rights in Program Evaluation. *American Journal of Evaluation*.
+
+**Mayer, D. J.** (2022) Simmer Down Now! A Study of Revenue Volatility and Dissolution in Nonprofit Organizations. *Nonprofit and Voluntary Sector Quarterly*. https://doi.org/10.1177/08997640221126147 [pdf](https://github.com/duncan-mayer/publications_dm/blob/main/journal_articles/Mayer_2022_nvsq.pdf)
+
+**Mayer, D. J.**, Fischer, R. L. (2022) Can a Measurement Error Perspective Improve Estimation in Neighborhood Effects Research? A Hierarchical Bayesian Methodology. *Social Science Quarterly*. https://doi.org/10.1111/ssqu.13190 [pdf](https://github.com/duncan-mayer/publications_dm/blob/main/journal_articles/Mayer_2022_ssq_pub.pdf)
+
+## Select Presentations
+
+**Mayer, D. J.** (2022). Understanding the Geography of Cuyahoga County's Nonprofit Sector Through Form-990 Data. Data Days Cleveland. [slides](https://github.com/duncan-mayer/publications_dm/blob/main/presentations/dm_data_days_990.pdf)

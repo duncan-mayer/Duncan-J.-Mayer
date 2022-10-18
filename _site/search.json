@@ -4,27 +4,41 @@
     "href": "index.html",
     "title": "Duncan J. Mayer",
     "section": "",
-    "text": "news\n\n\ncode\n\n\nanalysis\n\n\n\n\n\n\n\n\n\n\n\nOct 18, 2022\n\n\nHarlow Malloc\n\n\n\n\n\n\n  \n\n\n\n\n\n\n\n\n\n\nnews\n\n\n\n\n\n\n\n\n\n\n\nOct 15, 2022\n\n\nTristan O’Malley\n\n\n\n\n\n\nNo matching items"
+    "text": "publications\n\n\npdf\n\n\n\n\n\n\n\n\n\n\n\nOct 18, 2022\n\n\nDuncan J. Mayer\n\n\n\n\n\n\n  \n\n\n\n\n\n\n\n\n\n\nWelcome\n\n\n\n\n\n\n\n\n\n\n\nOct 15, 2022\n\n\nDuncan J. Mayer\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "posts/publications/index.html",
     "href": "posts/publications/index.html",
-    "title": "Post With Code",
+    "title": "Publications",
     "section": "",
-    "text": "1 + 1\n\n[1] 2"
+    "text": "Cincinnati library\nHere is a list of my publications and select presentations, with links to PDFs."
   },
   {
     "objectID": "posts/welcome/index.html",
     "href": "posts/welcome/index.html",
-    "title": "Welcome To My Blog",
+    "title": "Starting a Quarto Blog",
     "section": "",
-    "text": "Since this post doesn’t specify an explicit image, the first image in the post will be used in the listing page of posts."
+    "text": "This blog is my transition to quarto, and a place I’ll write about topics that interest me, or things I’m learning. Check out the my about page to learn more about me.\nSome items and topics that may appear on this blog include descriptions of presentations I make, or publications I contribute to. I may also write about spatial statistics, nonlinearity, and select topics in statistical inference.\nAdditionally, I’d like to use this blog to practice programming in a more public space. I have nearly a decade of experience with R, but I’d like to improve with python, and explore popular workflows in R that I haven’t yet. So, some posts related to those topics may appear here as well.\n\n\n\nGlasgow Scotland, 1955"
   },
   {
     "objectID": "about.html",
     "href": "about.html",
     "title": "About",
     "section": "",
-    "text": "About this blog"
+    "text": "I’m a statistician at BeVera Solutions and a PhD candidate with the Center on Poverty and Community Development in the Jack Joesph, and Morton Mandel School of Applied Social Sciences at Case Western Reserve University"
+  },
+  {
+    "objectID": "posts/publications/index.html#publications",
+    "href": "posts/publications/index.html#publications",
+    "title": "Publications",
+    "section": "Publications",
+    "text": "Publications\nMayer, D. J., Groza, V. (in press) Promoting Children’s Rights in Program Evaluation. American Journal of Evaluation.\nMayer, D. J. (2022) Simmer Down Now! A Study of Revenue Volatility and Dissolution in Nonprofit Organizations. Nonprofit and Voluntary Sector Quarterly. https://doi.org/10.1177/08997640221126147 pdf\nMayer, D. J., Fischer, R. L. (2022) Can a Measurement Error Perspective Improve Estimation in Neighborhood Effects Research? A Hierarchical Bayesian Methodology. Social Science Quarterly. https://doi.org/10.1111/ssqu.13190 pdf"
+  },
+  {
+    "objectID": "posts/publications/index.html#select-presentations",
+    "href": "posts/publications/index.html#select-presentations",
+    "title": "Publications",
+    "section": "Select Presentations",
+    "text": "Select Presentations\nMayer, D. J. (2022). Understanding the Geography of Cuyahoga County’s Nonprofit Sector Through Form-990 Data. Data Days Cleveland. slides"
   }
 ]
