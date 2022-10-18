@@ -6,8 +6,6 @@ categories: [publications, pdf]
 image: "cincinnati_library.webp"
 ---
 
-![Cincinnati library](cincinnati_library.webp){fig-align="center" width="200"}
-
 Here is a list of my publications and select presentations, with links to PDFs.
 
 ## Publications
