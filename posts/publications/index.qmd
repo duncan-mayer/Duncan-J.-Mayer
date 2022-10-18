@@ -6,7 +6,7 @@ categories: [publications, pdf]
 image: "cincinnati_library.webp"
 ---
 
-Here is a list of my publications and select presentations, with links to PDFs.
+Here is a list of my publications and select presentations, with links to PDFs. I will updated it periodically.
 
 ## Publications
 
