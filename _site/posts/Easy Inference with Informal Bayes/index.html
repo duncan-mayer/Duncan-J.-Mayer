@@ -249,7 +249,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <div class="cell">
 <details>
 <summary>Code</summary>
-<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>simple_sim <span class="ot">&lt;-</span> <span class="cf">function</span>(<span class="at">n =</span> <span class="fl">1e3</span>, <span class="at">bx =</span> <span class="fu">c</span>(<span class="dv">2</span>,<span class="fl">2.7</span>,<span class="dv">4</span>), <span class="at">const =</span> <span class="dv">5</span>,</span>
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>simple_sim <span class="ot">&lt;-</span> <span class="cf">function</span>(<span class="at">n =</span> <span class="fl">1e3</span>, <span class="at">bx =</span> <span class="fu">c</span>(<span class="dv">2</span>,<span class="dv">6</span>,<span class="dv">4</span>), <span class="at">const =</span> <span class="dv">5</span>,</span>
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>                       <span class="at">mu =</span> <span class="fu">c</span>(<span class="dv">10</span>, <span class="dv">3</span>, <span class="dv">4</span>), </span>
 <span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>                       <span class="at">sigma =</span> <span class="fu">matrix</span>(</span>
 <span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>                               <span class="at">data =</span> <span class="fu">c</span>(<span class="fl">1.11</span>, <span class="fl">0.66</span>, <span class="sc">-</span><span class="fl">0.54</span>,  </span>
@@ -290,12 +290,12 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <span id="cb3-12"><a href="#cb3-12" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(dfout,<span class="dv">5</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output cell-output-stdout">
-<pre><code>  (Intercept)       x1          z1        c samples
-1   -37.27578 6.713368 -2.13087419 6.607417     100
-2   -22.99647 5.028081 -0.09456565 5.264976     100
-3   -37.89262 6.541961 -1.30074997 6.241230     100
-4   -14.29463 3.982110  0.76550827 5.451617     100
-5   -29.11941 6.038991 -2.25741439 5.972961     100</code></pre>
+<pre><code>  (Intercept)       x1       z1        c samples
+1   -37.27578 6.713368 1.169126 6.607417     100
+2   -22.99647 5.028081 3.205434 5.264976     100
+3   -37.89262 6.541961 1.999250 6.241230     100
+4   -14.29463 3.982110 4.065508 5.451617     100
+5   -29.11941 6.038991 1.042586 5.972961     100</code></pre>
 </div>
 </div>
 <p>Having conducted informal Bayes, the results can be easily plotted, as in the figure below. The figure gives us a feel for the implications of the sample size for the difference in conditional mean parameters in a linear model. The results show that, under the assumptions of the model and a difference of .7, with no heterogeneity, you’d probably want a sample of at least 700. If those assumptions aren’t reasonable, or you need additional covariates, then you can adjust the simulation.</p>

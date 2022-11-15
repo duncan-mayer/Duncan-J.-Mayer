@@ -60,7 +60,7 @@ Having built a function to sample the posterior of regression parameters, lets s
 The following function takes a vector (`bx`, the fixed, but unknown conditional mean parameters), a variance-covariance matrix (`sigma`), a constant (`const`), as well as number of samples (`n`), and produces a linear model from the results. In the example I've kept it to three covariates including our two focal variables, without loss of generality.
 
 ```{r}
-simple_sim <- function(n = 1e3, bx = c(2,2.7,4), const = 5,
+simple_sim <- function(n = 1e3, bx = c(2,6,4), const = 5,
                        mu = c(10, 3, 4), 
                        sigma = matrix(
                                data = c(1.11, 0.66, -0.54,  
@@ -100,7 +100,7 @@ dfout <- do.call(rbind.data.frame, dfout)
 head(dfout,5)
 ```
 
-Having conducted informal Bayes, the results can be easily plotted, as in the figure below. The figure gives us a feel for the implications of the sample size for the difference in conditional mean parameters in a linear model. The results show that, under the assumptions of the model and a difference of .7, with no heterogeneity, you'd probably want a sample of at least 700. If those assumptions aren't reasonable, or you need additional covariates, then you can adjust the simulation.
+Having conducted informal Bayes, the results can be easily plotted, as in the figure below. The figure gives us a feel for the implications of the sample size for the difference in conditional mean parameters in a linear model. The results show that, under the assumptions of the model and a difference of 4 with no heterogeneity, you'd probably want a sample of at least 700. If those assumptions aren't reasonable, or you need additional covariates, then you can adjust the simulation.
 
 ```{r}
 library(ggplot2)
