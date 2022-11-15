@@ -2,6 +2,7 @@
   {
     "listing": "/index.html",
     "items": [
+      "/posts/Easy Inference with Informal Bayes/index.html",
       "/posts/publications/index.html",
       "/posts/welcome/index.html"
     ]
