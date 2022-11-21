@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Duncan J. Mayer">
-<meta name="dcterms.date" content="2022-11-15">
+<meta name="dcterms.date" content="2022-11-17">
 
 <title>Duncan J. Mayer - Easy Inference with Informal Bayes</title>
 <style>
@@ -183,7 +183,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
       <div>
       <div class="quarto-title-meta-heading">Published</div>
       <div class="quarto-title-meta-contents">
-        <p class="date">November 15, 2022</p>
+        <p class="date">November 17, 2022</p>
       </div>
     </div>
       
@@ -203,7 +203,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <section id="informal-bayesian-inference" class="level1">
 <h1>Informal Bayesian Inference</h1>
 <p>The topic of this post is what King et. al (2000) call “statistical simulation,” and Gelman and Hill (2007) call “informal Bayesian inference.”</p>
-<p>The idea is to explore the results of classical methods by pushing data through different components of fitted models. Interestingly, King et. al (2000) make comparisons to the bootstrap, while Gelman and Hill (2007) consider it analogous to Full Bayes with non-informative priors. I’ve used this approach a surprising amount in my work. It can provide a framework for interpretations that are descriptively rich as well as simple to implement and explain. Particularly, it provides a way to make contrasts and linear combinations that are otherwise difficult.</p>
+<p>The idea is to explore the results of classical methods by pushing data through different components of fitted models. Interestingly, King et. al (2000) make comparisons to the bootstrap, while Gelman and Hill (2007) consider it analogous to Full Bayes with non-informative priors. I’ve used this approach a surprising amount in my work. It can provide a framework for interpretations that are descriptively rich as well as simple to implement and explain. Particularly, it provides a way to make contrasts and other linear combinations that are otherwise difficult.</p>
 <p>Typically, the situation where I’ve reached for information Bayes is one where I used a classical method for expediency: too much data and/or too many parameters for my equipment, however, have a less conventional question or am not satisfied with the coefficient report. Generally, this approach has allowed me to quantify heterogeneity in fixed effects and gain intuition about the uncertainty in predictions.</p>
 <p>For this post, I’m going to focus on using informal Bayes to find the difference between parameters in linear models. The example I focus on here is simple, however, extends easily to more complex models. In practice, I’ve used this approach to compare parameters on different levels of hierarchical models, as well as assess which intervention, among several which are implemented simultaneously, is the most advantageous for additional investment.</p>
 <p>The first thing to do is build a function to make it easier to draw posterior samples from common models. The function below takes three inputs, a fitted model (<code>mod</code>), the number of posterior samples (<code>bsamps</code>), and a logical indicator which tells the function if a “robust” variance-covariance matrix is desired (<code>robust</code>). Fundamentally, the function retrieves or calculates the variance-covariance matrix from the fitted model, then samples from a multivariate normal (using <code>MASS::mvnorm</code> for simplicity) with mean vector specified as the point estimates and variance-covariance matrix from the fitted model<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a>.</p>

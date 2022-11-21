@@ -2,7 +2,7 @@
 title: "Easy Inference with Informal Bayes"
 author: "Duncan J. Mayer"
 categories: [bayesian inference, simulation, base r]
-date: "2022-11-15"
+date: "2022-11-17"
 image: "roller_skates.webp"
 code-fold: true
 ---
@@ -11,7 +11,7 @@ code-fold: true
 
 The topic of this post is what King et. al (2000) call "statistical simulation," and Gelman and Hill (2007) call "informal Bayesian inference."
 
-The idea is to explore the results of classical methods by pushing data through different components of fitted models. Interestingly, King et. al (2000) make comparisons to the bootstrap, while Gelman and Hill (2007) consider it analogous to Full Bayes with non-informative priors. I've used this approach a surprising amount in my work. It can provide a framework for interpretations that are descriptively rich as well as simple to implement and explain. Particularly, it provides a way to make contrasts and linear combinations that are otherwise difficult.
+The idea is to explore the results of classical methods by pushing data through different components of fitted models. Interestingly, King et. al (2000) make comparisons to the bootstrap, while Gelman and Hill (2007) consider it analogous to Full Bayes with non-informative priors. I've used this approach a surprising amount in my work. It can provide a framework for interpretations that are descriptively rich as well as simple to implement and explain. Particularly, it provides a way to make contrasts and other linear combinations that are otherwise difficult.
 
 Typically, the situation where I've reached for information Bayes is one where I used a classical method for expediency: too much data and/or too many parameters for my equipment, however, have a less conventional question or am not satisfied with the coefficient report. Generally, this approach has allowed me to quantify heterogeneity in fixed effects and gain intuition about the uncertainty in predictions.
 
