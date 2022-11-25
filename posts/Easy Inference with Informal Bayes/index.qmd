@@ -1,7 +1,7 @@
 ---
 title: "Easy Inference with Informal Bayes"
 author: "Duncan J. Mayer"
-categories: [bayesian inference, simulation, base r]
+categories: [bayesian inference, simulation, base, r]
 date: "2022-11-17"
 image: "roller_skates.webp"
 code-fold: true
