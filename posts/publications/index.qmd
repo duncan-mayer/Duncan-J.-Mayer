@@ -8,15 +8,17 @@ image: "cincinnati_library.webp"
 
 Here is a list of my publications and select presentations, with links to PDFs. I will updated it periodically.
 
-## Publications
+## Publications	
+
+**Mayer, D. J.** (in press) Social Capital and the Nonprofit Infrastructure; an Ecological Study of Child Maltreatment. Journal of Community Psychology. <https://doi.org/10.1002/jcop.22984>
 
 **Mayer, D. J.**, Groza, V. (in press) Promoting Children's Rights in Program Evaluation. *American Journal of Evaluation*.
 
-**Mayer, D. J.**, & Fischer, R. L. (2023). Exploring data use in nonprofit organizations. *Evaluation and Program Planning*, 97, 10. https://doi.org/10.1016/j.evalprogplan.2022.102197 [pdf](https://github.com/duncan-mayer/publications_dm/blob/main/journal_articles/Mayer_2023_epp.pdf)
+**Mayer, D. J.**, & Fischer, R. L. (2023). Exploring data use in nonprofit organizations. *Evaluation and Program Planning*, 97, 10. <https://doi.org/10.1016/j.evalprogplan.2022.102197> [pdf](https://github.com/duncan-mayer/publications_dm/blob/main/journal_articles/Mayer_2023_epp.pdf)
 
-**Mayer, D. J.** (2022) Simmer Down Now! A Study of Revenue Volatility and Dissolution in Nonprofit Organizations. *Nonprofit and Voluntary Sector Quarterly*. https://doi.org/10.1177/08997640221126147 [pdf](https://github.com/duncan-mayer/publications_dm/blob/main/journal_articles/Mayer_2022_nvsq.pdf)
+**Mayer, D. J.** (2022) Simmer Down Now! A Study of Revenue Volatility and Dissolution in Nonprofit Organizations. *Nonprofit and Voluntary Sector Quarterly*. <https://doi.org/10.1177/08997640221126147> [pdf](https://github.com/duncan-mayer/publications_dm/blob/main/journal_articles/Mayer_2022_nvsq.pdf)
 
-**Mayer, D. J.**, Fischer, R. L. (2022) Can a Measurement Error Perspective Improve Estimation in Neighborhood Effects Research? A Hierarchical Bayesian Methodology. *Social Science Quarterly*. https://doi.org/10.1111/ssqu.13190 [pdf](https://github.com/duncan-mayer/publications_dm/blob/main/journal_articles/Mayer_2022_ssq_pub.pdf)
+**Mayer, D. J.**, Fischer, R. L. (2022) Can a Measurement Error Perspective Improve Estimation in Neighborhood Effects Research? A Hierarchical Bayesian Methodology. *Social Science Quarterly*. <https://doi.org/10.1111/ssqu.13190> [pdf](https://github.com/duncan-mayer/publications_dm/blob/main/journal_articles/Mayer_2022_ssq_pub.pdf)
 
 ## Select Presentations
 
