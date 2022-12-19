@@ -770,6 +770,30 @@ ln(\lambda_i) \equiv ln(p_i) + X\beta + \phi_i + \delta_i
 <p>In the code below I generate weights for the 3 models considered under each data set. The table shows the order of neighbors assumed in the adjacency matrix used in the model, the order of neighbors used when simulating the data (“true”), the WAIC, and the weight. A correct model is one where the orders agree.</p>
 <p>Clearly, model comparison is not helpful in this situation. The weights are comparable across models, as predictive performance is largely unable to discern between adjacency matrices. However, assuming third order neighbors achieves the “best” predictive performance in all situations, despite being incorrect in two occasions. These results suggest the true order of neighbors can not be recovered by conventional model comparison.</p>
 <div class="cell">
+<details>
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>waictab <span class="ot">&lt;-</span> hyper_results[<span class="sc">!</span><span class="fu">duplicated</span>(hyper_results<span class="sc">$</span>waic), <span class="fu">c</span>(<span class="st">"neigh"</span>, <span class="st">"df"</span>, <span class="st">"waic"</span>)]</span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>create_weights <span class="ot">&lt;-</span> <span class="cf">function</span>(ic) {</span>
+<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a>  delta <span class="ot">&lt;-</span> ic <span class="sc">-</span> <span class="fu">min</span>(ic)</span>
+<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a>  exp_delta <span class="ot">&lt;-</span> <span class="fu">exp</span>((<span class="sc">-</span>.<span class="dv">5</span>)<span class="sc">*</span>delta)</span>
+<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a>  denom <span class="ot">&lt;-</span> <span class="fu">sum</span>(exp_delta)</span>
+<span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a>  prob_m <span class="ot">&lt;-</span> exp_delta <span class="sc">/</span> denom</span>
+<span id="cb6-8"><a href="#cb6-8" aria-hidden="true" tabindex="-1"></a>  icweights <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(delta, exp_delta, denom, prob_m)</span>
+<span id="cb6-9"><a href="#cb6-9" aria-hidden="true" tabindex="-1"></a><span class="fu">return</span>(icweights)  </span>
+<span id="cb6-10"><a href="#cb6-10" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb6-11"><a href="#cb6-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-12"><a href="#cb6-12" aria-hidden="true" tabindex="-1"></a>outt <span class="ot">&lt;-</span> <span class="fu">list</span>()</span>
+<span id="cb6-13"><a href="#cb6-13" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> (i <span class="cf">in</span> <span class="dv">1</span><span class="sc">:</span><span class="fu">length</span>(<span class="fu">table</span>(waictab<span class="sc">$</span>df))) {</span>
+<span id="cb6-14"><a href="#cb6-14" aria-hidden="true" tabindex="-1"></a>  temp <span class="ot">&lt;-</span> waictab[waictab<span class="sc">$</span>df <span class="sc">==</span> i, ]</span>
+<span id="cb6-15"><a href="#cb6-15" aria-hidden="true" tabindex="-1"></a>  temp<span class="sc">$</span>weight <span class="ot">&lt;-</span> <span class="fu">create_weights</span>(temp<span class="sc">$</span>waic)<span class="sc">$</span>prob_m</span>
+<span id="cb6-16"><a href="#cb6-16" aria-hidden="true" tabindex="-1"></a>  outt[[i]] <span class="ot">&lt;-</span> temp</span>
+<span id="cb6-17"><a href="#cb6-17" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb6-18"><a href="#cb6-18" aria-hidden="true" tabindex="-1"></a>waictab<span class="ot">&lt;-</span> <span class="fu">do.call</span>(rbind.data.frame, outt)</span>
+<span id="cb6-19"><a href="#cb6-19" aria-hidden="true" tabindex="-1"></a>waictab[,<span class="dv">3</span><span class="sc">:</span><span class="dv">4</span>] <span class="ot">&lt;-</span> <span class="fu">round</span>(waictab[,<span class="dv">3</span><span class="sc">:</span><span class="dv">4</span>],<span class="dv">2</span>)</span>
+<span id="cb6-20"><a href="#cb6-20" aria-hidden="true" tabindex="-1"></a>gt<span class="sc">::</span><span class="fu">cols_label</span>(gt<span class="sc">::</span><span class="fu">gt</span>(waictab[<span class="fu">order</span>(<span class="sc">-</span>waictab<span class="sc">$</span>weight),]), </span>
+<span id="cb6-21"><a href="#cb6-21" aria-hidden="true" tabindex="-1"></a>    <span class="at">neigh =</span> <span class="st">"Order (model)"</span>, <span class="at">df =</span> <span class="st">"Order (true)"</span>, <span class="at">waic =</span> <span class="st">"WAIC"</span>, <span class="at">weight =</span> <span class="st">"Weight"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
 <div class="cell-output-display">
 
 <div id="bkaaxzdoxf" style="overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
@@ -1123,23 +1147,23 @@ ln(\lambda_i) \equiv ln(p_i) + X\beta + \phi_i + \delta_i
   <tbody class="gt_table_body">
     <tr><td class="gt_row gt_center">3</td>
 <td class="gt_row gt_right">2</td>
-<td class="gt_row gt_right">4313.40</td>
+<td class="gt_row gt_right">4313.35</td>
 <td class="gt_row gt_right">0.39</td></tr>
     <tr><td class="gt_row gt_center">3</td>
 <td class="gt_row gt_right">1</td>
-<td class="gt_row gt_right">4297.98</td>
+<td class="gt_row gt_right">4297.99</td>
 <td class="gt_row gt_right">0.36</td></tr>
     <tr><td class="gt_row gt_center">3</td>
 <td class="gt_row gt_right">3</td>
 <td class="gt_row gt_right">4290.53</td>
 <td class="gt_row gt_right">0.36</td></tr>
+    <tr><td class="gt_row gt_center">1</td>
+<td class="gt_row gt_right">1</td>
+<td class="gt_row gt_right">4298.15</td>
+<td class="gt_row gt_right">0.33</td></tr>
     <tr><td class="gt_row gt_center">2</td>
 <td class="gt_row gt_right">2</td>
 <td class="gt_row gt_right">4313.68</td>
-<td class="gt_row gt_right">0.34</td></tr>
-    <tr><td class="gt_row gt_center">1</td>
-<td class="gt_row gt_right">1</td>
-<td class="gt_row gt_right">4298.14</td>
 <td class="gt_row gt_right">0.33</td></tr>
     <tr><td class="gt_row gt_center">2</td>
 <td class="gt_row gt_right">3</td>
@@ -1147,7 +1171,7 @@ ln(\lambda_i) \equiv ln(p_i) + X\beta + \phi_i + \delta_i
 <td class="gt_row gt_right">0.33</td></tr>
     <tr><td class="gt_row gt_center">2</td>
 <td class="gt_row gt_right">1</td>
-<td class="gt_row gt_right">4298.24</td>
+<td class="gt_row gt_right">4298.23</td>
 <td class="gt_row gt_right">0.31</td></tr>
     <tr><td class="gt_row gt_center">1</td>
 <td class="gt_row gt_right">3</td>
@@ -1156,7 +1180,7 @@ ln(\lambda_i) \equiv ln(p_i) + X\beta + \phi_i + \delta_i
     <tr><td class="gt_row gt_center">1</td>
 <td class="gt_row gt_right">2</td>
 <td class="gt_row gt_right">4314.08</td>
-<td class="gt_row gt_right">0.28</td></tr>
+<td class="gt_row gt_right">0.27</td></tr>
   </tbody>
   
   
