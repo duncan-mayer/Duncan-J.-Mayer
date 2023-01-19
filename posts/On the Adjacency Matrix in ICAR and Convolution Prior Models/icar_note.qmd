@@ -1,7 +1,7 @@
 ---
 title: "On the Adjacency Matrix in ICAR and Convolution Prior Models"
 author: "Duncan J. Mayer"
-date: "2022-01-10"
+date: "2023-01-10"
 categories: [spatial, simulation, r, base]
 image: "navigation_hotline_1969.webp"
 code-fold: true

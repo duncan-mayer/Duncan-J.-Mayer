@@ -2,10 +2,10 @@
   {
     "listing": "/index.html",
     "items": [
+      "/posts/On the Adjacency Matrix in ICAR and Convolution Prior Models/icar_note.html",
       "/posts/Easy Inference with Informal Bayes/index.html",
       "/posts/publications/index.html",
-      "/posts/welcome/index.html",
-      "/posts/On the Adjacency Matrix in ICAR and Convolution Prior Models/icar_note.html"
+      "/posts/welcome/index.html"
     ]
   }
 ]
