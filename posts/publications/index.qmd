@@ -8,9 +8,9 @@ image: "cincinnati_library.webp"
 
 Here is a list of my publications and select presentations, with links to PDFs. I will updated it periodically.
 
-## Publications	
+## Publications
 
-**Mayer, D. J.** (in press) Social Capital and the Nonprofit Infrastructure; an Ecological Study of Child Maltreatment. Journal of Community Psychology. <https://doi.org/10.1002/jcop.22984>
+**Mayer, D. J.** (2023) Social Capital and the Nonprofit Infrastructure; an Ecological Study of Child Maltreatment. Journal of Community Psychology. <https://doi.org/10.1002/jcop.22984> [pdf](https://github.com/duncan-mayer/publications_dm/blob/main/journal_articles/mayer_2023_jcop.pdf)
 
 **Mayer, D. J.**, Groza, V. (in press) Promoting Children's Rights in Program Evaluation. *American Journal of Evaluation*.
 
