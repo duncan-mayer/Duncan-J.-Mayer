@@ -8,13 +8,16 @@ image: "cincinnati_library.webp"
 
 Here is a list of my publications and select presentations, with links to PDFs. I will updated it periodically.
 
-## Publications
+## Publications		
 
-**Mayer, D. J.**, Fischer, R. L. (accepted) Exploring Niche Alteration in Nonprofit Organizations. *Administration and Society*.
-
-**Mayer, D. J.** (2023) Social Capital and the Nonprofit Infrastructure; an Ecological Study of Child Maltreatment. *Journal of Community Psychology*. DOI: [10.1002/jcop.22984](https://doi.org/10.1002/jcop.22984) [pdf](https://github.com/duncan-mayer/publications_dm/blob/main/journal_articles/mayer_2023_jcop.pdf)
+**Mayer, D. J.** (accepted). Understanding Location and Density; A Spatial Analysis of Cuyahoga County Ohio\'s Nonprofit Sector.
+*Nonprofit and Voluntary Sector Quarterly.*
 
 **Mayer, D. J.**, Groza, V. (in press) Promoting Children's Rights in Program Evaluation. *American Journal of Evaluation*.
+
+**Mayer, D. J.**, Fischer, R. L. (accepted) Exploring Niche Alteration in Nonprofit Organizations. *Administration and Society*. DOI: [10.1177/00953997231165255](https://journals.sagepub.com/doi/abs/10.1177/00953997231165255) [pdf](https://github.com/duncan-mayer/publications_dm/blob/main/journal_articles/Mayer_2023_as.pdf)
+
+**Mayer, D. J.** (2023) Social Capital and the Nonprofit Infrastructure; an Ecological Study of Child Maltreatment. *Journal of Community Psychology*. DOI: [10.1002/jcop.22984](https://doi.org/10.1002/jcop.22984) [pdf](https://github.com/duncan-mayer/publications_dm/blob/main/journal_articles/mayer_2023_jcop.pdf)
 
 **Mayer, D. J.** (2023) Understanding Social Disorganization and the Nonprofit Infrastructure; An Ecological Study of Child Maltreatment Rates. *Social Currents*. DOI: [10.1177/23294965231159317](https://doi.org/10.1177/23294965231159317) [pdf](https://github.com/duncan-mayer/publications_dm/blob/main/journal_articles/mayer_2023_sc.pdf)
 
