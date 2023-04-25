@@ -8,10 +8,9 @@ image: "cincinnati_library.webp"
 
 Here is a list of my publications and select presentations, with links to PDFs. I will updated it periodically.
 
-## Publications		
+## Publications
 
-**Mayer, D. J.** (accepted). Understanding Location and Density; A Spatial Analysis of Cuyahoga County Ohio\'s Nonprofit Sector.
-*Nonprofit and Voluntary Sector Quarterly.*
+**Mayer, D. J.** (accepted). Understanding Location and Density; A Spatial Analysis of Cuyahoga County Ohio's Nonprofit Sector. *Nonprofit and Voluntary Sector Quarterly.*
 
 **Mayer, D. J.**, Groza, V. (in press) Promoting Children's Rights in Program Evaluation. *American Journal of Evaluation*.
 
