@@ -12,7 +12,9 @@ Here is a list of my publications and select presentations, with links to PDFs. 
 
 **Mayer, D. J.**, Groza, V. (in press) Promoting Children's Rights in Program Evaluation. *American Journal of Evaluation*.
 
-**Mayer, D. J.** (2023). Understanding Location and Density; A Spatial Analysis of Cuyahoga County Ohio's Nonprofit Sector. *Nonprofit and Voluntary Sector Quarterly. DOI:* [10.1177/089976402311710 ](https://doi.org/10.1177/08997640231171074) [pdf](https://github.com/duncan-mayer/publications_dm/blob/main/journal_articles/location_density_nvsq.pdf)
+Teaching Spatial Data Analysis; A Case Study with Recommendations. *Nonprofit Policy Forum.* DOI [10.1515/npf-2022-0044](https://www.degruyter.com/document/doi/10.1515/npf-2022-0044/html)
+
+**Mayer, D. J.** (2023). Understanding Location and Density; A Spatial Analysis of Cuyahoga County Ohio's Nonprofit Sector. *Nonprofit and Voluntary Sector Quarterly. DOI:* [10.1177/089976402311710](https://doi.org/10.1177/08997640231171074) [pdf](https://github.com/duncan-mayer/publications_dm/blob/main/journal_articles/location_density_nvsq.pdf)
 
 **Mayer, D. J.**, Fischer, R. L. (2023) Exploring Niche Alteration in Nonprofit Organizations. *Administration and Society*. DOI: [10.1177/00953997231165255](https://journals.sagepub.com/doi/abs/10.1177/00953997231165255) [pdf](https://github.com/duncan-mayer/publications_dm/blob/main/journal_articles/Mayer_2023_as.pdf)
 
