@@ -4,9 +4,6 @@ image: sante_fe.jpg
 about:
   template: jolla
   links:
-    - icon: twitter
-      text: Twitter
-      href: https://twitter.com/Duncan_Mayer
     - icon: linkedin
       text: LinkedIn
       href: linkedin.com/in/duncan-mayer
